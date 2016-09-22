@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-wap content = {
+wap articleone = {
     
     title:'article-one',
     heading:'surya frends'
