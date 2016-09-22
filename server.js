@@ -4,6 +4,18 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+wap content = {
+    
+    title:'article-one',
+    heading:'surya frends'
+    body: "this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding"
+    
+    
+};
+
+
+    
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
