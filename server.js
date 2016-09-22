@@ -12,6 +12,10 @@ wap articleone = {
     
     
 };
+html template = { 
+    
+    
+};
 
 
     
