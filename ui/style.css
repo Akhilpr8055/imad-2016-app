@@ -19,4 +19,13 @@ body {
 .img-medium {
     height: 200px;
 }
-
+ .container 
+                {
+                color: #00FFF3;
+                font-family: cursive;
+                margin: center;
+                background: #202B56;
+                padding-left: 100px;
+                padding-right: 100px;
+                text-decoration: underline;
+                     }
