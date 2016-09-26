@@ -10,6 +10,11 @@ var articleOne = {
     heading :'surya frends',
     content :`this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding`
     };
+function createTemplate(data)
+    {
+        var title = data.title;
+        var heading = data.heading;
+        var content = data.content;
 var htmltemplate = ` <html>
     <head>
         <title>
@@ -47,13 +52,10 @@ var htmltemplate = ` <html>
     
 
 </html>
-
-
-    
-    
 `;
-
-
+return httpTemplate;
+ 
+}
     
 
 
