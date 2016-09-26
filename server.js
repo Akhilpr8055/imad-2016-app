@@ -9,7 +9,8 @@ var articleOne = {
     title :'article-one',
     heading :'surya frends',
     content :`this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding`
-    };<html>
+    };
+var htmltemplate = ` <html>
     <head>
         <title>
             ${title}
@@ -46,7 +47,6 @@ var articleOne = {
     
 
 </html>
-var htmltemplate = `
 
 
     
