@@ -9,11 +9,49 @@ var articleOne = {
     title :'article-one',
     heading :'surya frends',
     content :`this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding`
-    };
-html template = { 
+    };<html>
+    <head>
+        <title>
+            ${title}
+        </title>
+         <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+   
+    <body>
+        <div class=container>
+        <div>
+       <a href= "https://cloud.imad.hasura.io/home" >Home</a>
+        </div>
+        <div>
+        
+                <h4>
+                    ${heading}
+                </h4>
+        
+        </div>
+        <div>
+            <ul>
+                <li><a href = "http://www.cochintalkies.com/celebrities_image/thumb1/jomon-t-john-movie-cinematography-pics-6113.jpg">JOMON</a></li>
+                 <li>sasi</li>
+                  <li>suneesh</li>
+            </ul>
+        </div>
+        <div>
+            <p>
+           ${content}
+            </p>
+        </div>
+        </div>
+    </body>
+    
+
+</html>
+var htmltemplate = `
+
+
     
     
-};
+`;
 
 
     
