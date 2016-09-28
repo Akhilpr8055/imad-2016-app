@@ -6,19 +6,19 @@ var app = express();
 app.use(morgan('combined'));
 var articles=
 {
-articleOne : {
+'article-one' : {
     
     title :'article-one',
     heading :'surya frends',
     content :`this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding`
     },
-    articleTwo:{
+    'article-two':{
     
     title :'article-two',
     heading :'surya enimies',
     content :`this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows demo shows padding`
     },
-     articleThree :{
+     'article-three' :{
     
     title :'article-three',
     heading :'surya others',
@@ -77,15 +77,12 @@ return httpTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article-one',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+app.get('/:articleNmae',function(req,res){
+    var articleName=req.params.articleNmae;
+   res.send(createTemplate(articles[articleName]));
+   
 });
-app.get('/article-two',function(req,res){
-       res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-app.get('/article-three',function(req,res){
-      res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
