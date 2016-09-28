@@ -4,12 +4,27 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleOne = {
+var articles=
+{
+articleOne : {
     
     title :'article-one',
     heading :'surya frends',
     content :`this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding`
-    };
+    },
+    articleTwo:{
+    
+    title :'article-two',
+    heading :'surya enimies',
+    content :`this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows paddingthis is a demo shows padding this is a demo shows demo shows padding`
+    },
+     articleThree :{
+    
+    title :'article-three',
+    heading :'surya others',
+    content :`this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding this is a demo shows padding`
+    }
+}
 function createTemplate(data)
     {
         var title = data.title;
