@@ -1,7 +1,7 @@
 console.log('Loaded!');
 var element = document.getElementById('name1');
 
-element.innerHTML='JOMON';
+element.innerHTML='AKHIL';
 var img = document.getElementById('madi');
 var marginLeft = 0;
 function moveRight()
