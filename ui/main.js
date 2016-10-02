@@ -12,7 +12,7 @@ button.onclick = function(){
            }
        }
    };
-   request.open('GET', 'http://http://akhilpr8055.imad.hasura-app.io/counter' , true);
+   request.open('GET', 'http://akhilpr8055.imad.hasura-app.io/counter' , true);
    request.send(null);
 
 };
