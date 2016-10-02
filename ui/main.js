@@ -3,7 +3,7 @@ var button = document.getElementById('counter');
 button.onclick = function(){
    var request = new XMLHttprequest();
    request.onreadystatechange = function(){
-       if(request.readystate == XMLHttprequest.DONE)
+       if(request.readyState == XMLHttprequest.DONE)
        {
            if(request.status == 200){
                var counter = request.responceText;
@@ -12,7 +12,7 @@ button.onclick = function(){
            }
        }
    };
-   request.sent('GET', 'http://http://akhilpr8055.imad.hasura-app.io/counter' , true);
-   request.sent(null);
+   request.open('GET', 'http://http://akhilpr8055.imad.hasura-app.io/counter' , true);
+   request.send(null);
 
 };
